@@ -143,7 +143,7 @@ $(function () {
 
   $(document).on("click", "#nav-products, #nav-home", function () {
     $("#search-bar").val("");
-    $("#home").show();
+    $(".product-card").show();
   });
 
   $(document).on("click", ".product-img", function () {
