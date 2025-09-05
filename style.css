@@ -1,0 +1,29 @@
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.navbar {
+  min-height: 60px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  height: 200px;   
+  object-fit: cover; 
+  border-bottom: 1px solid #ddd;
+}
+
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

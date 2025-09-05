@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Laptop",
+    "price": 12000,
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80",
+    "description": "High performance laptop with 16GB RAM and 512GB SSD."
+  },
+{
+    "name": "Headphones",
+    "price": 1500,
+    "image": "https://plus.unsplash.com/premium_photo-1679513691474-73102089c117?auto=format&fit=crop&w=800&q=80",
+    "description": "Noise-cancelling over-ear headphones with deep bass."
+  },
+  {
+    "name": "Smartphone",
+    "price": 8000,
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    "description": "Latest smartphone with AMOLED display and 5G support."
+  },
+  {
+    "name": "Smartwatch",
+    "price": 2000,
+    "image": "https://images.unsplash.com/photo-1660844817855-3ecc7ef21f12?auto=format&fit=crop&w=800&q=80",
+    "description": "Stylish smartwatch with fitness tracking and notifications."
+  },
+  {    
+    "name": "Running Shoes",
+    "price": 900,
+    "image": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=800&q=80",
+    "description": "Lightweight running shoes for daily workouts."
+  },
+  {
+    "name": "Men's Jacket",
+    "price": 500,
+    "image": "https://images.unsplash.com/photo-1557418669-db3f781a58c0?auto=format&fit=crop&w=800&q=80",
+    "description": "Warm winter jacket with hood."
+  },
+  {
+    "name": "Backpack",
+    "price": 1000,
+    "image": "https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?auto=format&fit=crop&w=800&q=80",
+    "description": "Spacious backpack with multiple compartments."
+  },
+  {
+    "name": "Sunglasses",
+    "price": 700,
+    "image": "https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=800&q=80",
+    "description": "Polarized sunglasses with UV protection."
+  },
+  {
+    "name": "Coffee Maker",
+    "price": 3000,
+    "image": "https://images.unsplash.com/photo-1608354580875-30bd4168b351?auto=format&fit=crop&w=800&q=80",
+    "description": "Automatic coffee machine with timer."
+  }
+ 
+]
