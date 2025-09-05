@@ -3,9 +3,9 @@ $(function () {
   let productsData = [];
 
   $.ajax({
-    url: "products.json",   
-    method: "GET",          
-    dataType: "json",  
+    url: "products.json",
+    method: "GET",
+    dataType: "json",
     success: function (data) {
       productsData = data || [];
       renderProducts(productsData);
@@ -17,7 +17,7 @@ $(function () {
           ❌ Failed to load products. Please try again later.
         </div>
       `);
-    }
+    },
   });
   function renderProducts(products) {
     $("#product-list").empty();
@@ -26,7 +26,9 @@ $(function () {
       <div class="col-sm-6 col-md-4 col-lg-3 mb-4 product-card"
            data-name="${product.name.toLowerCase()}">
         <div class="card h-100">
-          <img src="${product.image}" class="card-img-top product-img" alt="${product.name}" data-index="${index}">
+          <img src="${product.image}" class="card-img-top product-img" alt="${
+        product.name
+      }" data-index="${index}">
           <div class="card-body text-center">
             <h5 class="card-title">${product.name}</h5>
             <p class="card-text fw-bold">₹${product.price}</p>
@@ -100,7 +102,8 @@ $(function () {
   $(document).on("click", ".add-to-cart", function () {
     const $card = $(this).closest(".product-card");
     const name = $card.find(".card-title").text();
-    const price = parseFloat($card.find(".card-text").text().replace("₹", "")) || 0;
+    const price =
+      parseFloat($card.find(".card-text").text().replace("₹", "")) || 0;
     const image = $card.find("img").attr("src") || "";
     addByName(name, price, image);
   });
@@ -132,6 +135,15 @@ $(function () {
       const name = $(this).data("name");
       $(this).toggle(name.includes(query));
     });
+  });
+  $(document).on("click", "#nav-products", function () {
+    $("#search-bar").val("");
+    $(".product-card").show();
+  });
+
+  $(document).on("click", "#nav-products, #nav-home", function () {
+    $("#search-bar").val("");
+    $("#home").show();
   });
 
   $(document).on("click", ".product-img", function () {

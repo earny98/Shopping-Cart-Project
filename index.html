@@ -13,7 +13,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">MyShop</a>
+        <a class="navbar-brand" href="#home" id="nav-home">MyShop</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -25,7 +25,12 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#product-list" id="nav-products"
+                >Products</a
+              >
+            </li>
+
             <li class="nav-item">
               <a
                 class="nav-link position-relative"
@@ -48,8 +53,17 @@
         </div>
       </div>
     </nav>
+    <section id="home" class="py-5 text-center bg-light mt-5">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Welcome to MyShop 🛒</h1>
+        <p class="lead">
+          Your one-stop shop for electronics, fashion, and more!
+        </p>
+        <a href="#product-list" class="btn btn-primary btn-lg mt-3">Shop Now</a>
+      </div>
+    </section>
 
-    <main class="container mt-5 pt-5">
+    <main class="container pt-5">
       <div class="row mb-4">
         <div class="col-12">
           <input
